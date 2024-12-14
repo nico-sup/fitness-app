@@ -1,0 +1,57 @@
+html, body {
+    background: rgb(20, 20, 20);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 10px;
+}
+
+.rounded-block, section {
+    background: rgb(35,35,35);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin:0;
+    font-size: 15px;
+    color: rgb(203,249,71);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: grid;
+
+}
+
+input {
+    background:transparent;
+    border: rgb(203,249,71) solid 2px;
+    border-radius:10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: white;
+}
+
+button {
+    background:rgb(203,249,71);
+    border-radius:10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border:transparent;
+}
+
+.activity-days, .day {
+    display: grid;
+}

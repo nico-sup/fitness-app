@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Tracker</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="rounded-block">Activity Tracker</h1>
+    </header>
+
+    <main>
+        <section id="addActivitySection">
+            <h2>Add a New Activity</h2>
+            <div class="form">
+                <input type="text" id="activityName" placeholder="Activity Name">
+                <input type="number" id="days" placeholder="Number of Days">
+                <input type="number" id="reps" placeholder="Reps Per Day">
+            </div>
+            <button id="addActivity">Add Activity</button>
+        </section>
+
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <div class="stats">
+                <p>Total Activities: <span id="totalActivities">0</span></p>
+                <p>Total Reps: <span id="totalReps">0</span></p>
+                <p>Days Remaining: <span id="daysRemaining">0</span></p>
+            </div>
+            <div class="progress">
+                <p>Progress:</p>
+                <div id="progressBarContainer">
+                    <progress id="progressBar" max="100" value="0"></progress>
+                </div>
+                <p id="progressPercentage">0%</p>
+            </div>
+        </section>
+
+        <section id="activitiesSection">
+            <h2>Activities</h2>
+            <div id="activityList"></div>
+        </section>
+
+        <!-- Page for viewing a specific day's activity -->
+        <section id="dayActivityPage" style="display: none;">
+            <button id="backToActivities">Back to Activities</button>
+            <h2 id="activityDayTitle">Activity - Day X</h2>
+            <p id="activityDescription">Complete your task for today!</p>
+            <div id="timerSection">
+                <p>Time Spent: <span id="timerDisplay">00:00:00</span></p>
+                <button id="startTimer">Start</button>
+                <button id="stopTimer">Stop</button>
+                <button id="saveTime">Save Time</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
