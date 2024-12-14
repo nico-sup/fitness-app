@@ -50,6 +50,8 @@ button {
     margin-bottom: 10px;
     padding: 10px;
     border:transparent;
+    color:rgb(20, 20, 20);
+    font-weight: bold;
 }
 
 .activity-days, .day {
